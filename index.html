@@ -12,13 +12,14 @@
       rel="icon"
       href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/3NumberThreeInCircle.svg/2000px-3NumberThreeInCircle.svg.png"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/fd29a5e513.js" crossorigin="anonymous"></script>
+
 
     <style>
       .image {
         display: inline-block;
       }
-      <!-- Tabelle -->
       .item1 {
         grid-area: header;
       }
@@ -44,115 +45,60 @@
           "bobby bobby mobby mobby tobby tobby"
           "about about about impressum impressum impressum";
         gap: 5px;
-        background-color: hsl(138, 81%, 36%);
+        background-color: hsl(308, 67%, 35%);
         padding: 5px;
       }
       .grid-container > div {
-        background-color: rgba(243, 92, 32, 0.89);
+        background-color: rgba(84, 109, 122, 0.89);
         text-align: center;
         padding: 15px;
         font-size: 20px;
       }
-      <!-- Tabelle-Ende -->
-      .image1 {
-        width: 400px;
-        height: 200px;
-        overflow: hidden;
-        border: 1px solid rgb(0, 0, 0);
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: DodgerBlue;
       }
-
-      .image1 img {
-        margin: 0px 0px -105px -155px;
-      }
-
-      .image2 {
-        width: 400px;
-        height: 200px;
-        overflow: hidden;
-        border: 1px solid black;
-      }
-
-      .image2 img {
-        margin: 0px 0px -105px -55px;
-      }
-
-      .image3 {
-        width: 400px;
-        height: 200px;
-        overflow: hidden;
-        border: 1px solid black;
-      }
-
-      .image3 img {
-        margin: 0px 0px -110px -25px;
-      }
-
-      font {
-        text-shadow: 1px 1px black;
+      img {
+        border: 5px solid rgb(43, 116, 199);
       }
     </style>
   </head>
 
-  <body>
-    <h1>Das sind Bobby, Mobby und Tobby!</h1>
+  <body style="background-image: url('/cat4background.jpg');">
+    <h1><p style="color:rgb(43, 116, 199)">Das sind Bobby, Mobby und Tobby!</p></h1>
     <div class="grid-container">
-      <div class="item1">Finden Sie Ihren nächsten Liebling!</div>
-      <div class="item2">Der traurige Bobby</div>
-      <div class="item3">Der freundliche Mobby</div>
-      <div class="item4">Der enttäuschte Tobby</div>
-      <div class="item5">Über mich</div>
-      <div class="item6">Impressum</div>
+    <div class="item1"><h2>Finden Sie Ihren nächsten Liebling!</h2></div>
+    <div class="item2">
+      <a href="https://de.wikipedia.org/wiki/Tabby">
+        <img src="/cat1.jpeg" />
+      </a>
+      <p><b>Der traurige Bobby</b></p>
     </div>
-    <br />
-    <div id="banner" style="overflow: hidden; display: inline-block">
-      <!--Bild 1 - Bobby-->
-      <div class="image1" style="max-width: 50%; max-height: 50%">
-        <img
-          src="https://images.unsplash.com/photo-1618813576930-12cf7ad6dc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2l0dGllc3xlbnwwfHwwfHw%3D&w=1000&q=80"
-          width="400px"
-        />
-        <font face="arial" size="5px" color="orange"
-          ><b
-            ><a target="_blank" href="https://de.wikipedia.org/wiki/Tabby"
-              >Bobby</a
-            ></b
-          ></font
-        >
-      </div>
-      <hr />
-      <!--Bild 2 - Mobby-->
-      <div class="image2" style="max-width: 50%; max-height: 50%">
-        <img
-          src="https://image.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg"
-          width="373px"
-        />
-        <font face="arial" size="5px" color="White"
-          ><b
-            ><a
-              target="_blank"
-              href="https://de.wikipedia.org/wiki/Britisch_Kurzhaar"
-              >Mobby</a
-            ></b
-          ></font
-        >
-      </div>
-      <hr />
-      <!--Bild 3 - Tobby-->
-      <div class="image3" style="max-width: 50%; max-height: 50%">
-        <img
-          src="https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-          width="275px"
-        />
-        <font face="arial" size="5px" color="White"
-          ><b
-            ><a
-              target="_blank"
-              href="https://de.wikipedia.org/wiki/Schottische_Faltohrkatze"
-              >Tobby</a
-            ></b
-          ></font
-        >
-      </div>
+    <div class="item3">
+      <a href="https://de.wikipedia.org/wiki/Britisch_Kurzhaar">
+        <img src="/cat2.jpeg" />
+      </a>
+      <p><b>Der freundliche Mobby</b></p>
+    </div>
+    <div class="item4">
+      <a href="https://de.wikipedia.org/wiki/Schottische_Faltohrkatze">
+        <img src="/cat3.jpeg" />
+      </a>
+      <p><b>Der enttäuschte Tobby</b></p>
+    </div>
+    <div class="item5">
+      <b>Über mich</b><br />
+      Ich heiße Jakub, bin 22 Jahre alt und lerne HTML CSS und JS, das hier ist
+      die erste Seite die ich mit meinen Grundkenntnissen erstellen konnte.
+    </div>
+    <div class="item6">
+      <b>Impressum</b> <br />
+      Kontakt: <br />
+      <i class="fa-solid fa-at"></i> Email:j.gasiorek@gmail.com
+      <br><i class="fa-brands fa-twitter"></i> Twitter @jakub.gasiorek2</br>
+      <i class="fa-brands fa-github"></i> GitHub: @JakobyDEV </br>
     </div>
   </body>
 </html>
