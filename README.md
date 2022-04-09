@@ -5,7 +5,5 @@ Catweb is my first HTML project. Startet learning the language recently and the 
 current todo:
 
 #overhauling the looks -low priority
-
 #fixing scaling on mobile phones -high priority
-
 #adding more cats - maybe
