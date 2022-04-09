@@ -1,6 +1,6 @@
 # Cweb - Catweb
 
-Catweb is my first HTML project. Startet learning the language recently and the first idea which came to my head was making a website with.. Cats.
+Catweb is my first HTML project. Started learning HTMl recently and the first idea which came to my mind was making a website about/with.. Cats.
 
 current todo:
 
