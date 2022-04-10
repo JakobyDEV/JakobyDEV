@@ -1,102 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>3Katzen | Bobby Mobby Tobby</title>
-    <meta
-      name="description"
-      content="Die drei süßen. Ginger, White und Serious."
-    />
-    <meta charset="utf-8" />
-    <meta name="cats" content="index,follow" />
-    <link
-      rel="icon"
-      href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/3NumberThreeInCircle.svg/2000px-3NumberThreeInCircle.svg.png"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/fd29a5e513.js" crossorigin="anonymous"></script>
-
-
+    <link rel="icon" href="https://i.ibb.co/QjQd2Ps/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fd29a5e513.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-      .image {
-        display: inline-block;
+      * {
+        box-sizing: border-box;
       }
-      .item1 {
-        grid-area: header;
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
       }
-      .item2 {
-        grid-area: bobby;
-      }
-      .item3 {
-        grid-area: mobby;
-      }
-      .item4 {
-        grid-area: tobby;
-      }
-      .item5 {
-        grid-area: about;
-      }
-      .item6 {
-        grid-area: impressum;
-      }
-      .grid-container {
-        display: grid;
-        grid-template-areas:
-          "header header header header header header"
-          "bobby bobby mobby mobby tobby tobby"
-          "about about about impressum impressum impressum";
-        gap: 5px;
-        background-color: hsl(308, 67%, 35%);
-        padding: 5px;
-      }
-      .grid-container > div {
-        background-color: rgba(84, 109, 122, 0.89);
-        text-align: center;
+
+      [class*="col-"] {
+        float: left;
         padding: 15px;
-        font-size: 20px;
       }
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: DodgerBlue;
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
       }
-      img {
-        border: 5px solid rgb(43, 116, 199);
+
+      .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 15px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+
+      .aside {
+        background-color: #33b5e5;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .footer {
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+      body {
+  background-image: url('https://i.pinimg.com/originals/d3/b8/73/d3b873884a6bc600bcd2837f5c0da189.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
       }
     </style>
   </head>
-
-  <body style="background-image: url('https://github.com/JakobyDEV/JakobyDEV/blob/main/cat4background.jpg?raw=true');">
-    <h1><p style="color:rgb(43, 116, 199)">Meet Bobby, Mobby und Tobby!</p></h1>
-    <div class="grid-container">
-    <div class="item1"><h2>CatWeb Beta 0.65</h2></div>
-    <div class="item2">
-
-        <img src="https://i.ibb.co/RhXcQTR/cat1.jpg" />
-
-      <p><b>The sad Bobby <a target="_blank" href="https://de.wikipedia.org/wiki/Tabby">Wiki</a></b></p>
+  <body>
+    <div class="header">
+      <h1>Four horsman of cutness <i class="fa-solid fa-cat"></i></h1>
     </div>
-    <div class="item3">
 
-        <img src="https://i.ibb.co/fn1cgpY/cat2.jpg" />
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+          <li>
+            <img src="https://i.ibb.co/RhXcQTR/cat1.jpg" />
 
-      <p><b>The friendly Mobby <a target="_blank" href="https://de.wikipedia.org/wiki/Britisch_Kurzhaar">Wiki</a></b></p>
-    </div>
-    <div class="item4">
+            <p>
+              <b
+                >The sad Bobby
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Tabby_cat"
+                  >Wiki</a
+                ></b
+              >
+            </p>
+          </li>
+          <li>
+            <img src="https://i.ibb.co/fn1cgpY/cat2.jpg" />
 
-        <img src="https://i.ibb.co/RTxYkdh/cat3.jpg" />
-      <p><b>The serious Tobby </b><a target="_blank" href="https://de.wikipedia.org/wiki/Schottische_Faltohrkatze">Wiki</a></p>
+            <p>
+              <b
+                >The friendly Mobby
+                <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/British_Shorthair"
+                  >Wiki</a
+                ></b
+              >
+            </p>
+          </li>
+          <li>
+            <img src="https://i.ibb.co/RTxYkdh/cat3.jpg" />
+            <p>
+              <b>The serious Tobby </b
+              ><a
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Scottish_Fold"
+                >Wiki</a
+              >
+            </p>
+          </li>
+          <li>
+            <img src="https://i.ibb.co/tP8Cbf1/cat4.png" />´
+            <p>
+              <b>The cautious Wobby</b>
+              <a
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Norwegian_Forest_cat"
+                >Wiki</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h1>The crew</h1>
+        <p>
+          <b>Bobby</b> is our captain, he is never optimistic. But, that makes
+          him a perfect leader for our operations. <br />
+          <br /><b>Mobby</b> is our diplomat, his open-up character alows us to
+          recive more hugs, kisses and <b>food</b>. <br />
+          <br />
+          <b>Tobby</b> is our killer machine. His predator instinst never let
+          him rest for a second. He is always on duty, seeing the world as it
+          is. <br />
+          <br />
+          Last but not least our cheif enginer <b> Wobby</b> his studying
+          carefully every single toy we recive from our human.
+        </p>
+      </div>
+
+      <div class="col-3 right">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>We are the Catops.</p>
+          <h2>Where?</h2>
+          <p>Any where, when the food is good enough.</p>
+        </div>
+        <br />
+        <div class="aside">
+          <h2>Our creator</h2>
+          <p>Jakub, 22. Webdesign newbie.</p>
+          <h2>Contact</h2>
+          <p><i class="fa-solid fa-at"></i> Email:j.gasiorek@gmail.com
+            <br>
+            <i class="fa-brands fa-twitter"></i> Twitter <a target="_blank" href="https://twitter.com/JakubGasiorek2"> @jakub.gasiorek2</a></br>
+            <i class="fa-brands fa-github"></i> GitHub: <a target="_blank" href="https://github.com/JakobyDEV"> @JakobyDEV</a> </br></p>
+        </div>
+      </div>
     </div>
-    <div class="item5">
-      <b>About me</b><br />
-      My name is Jakub, I´m 22 years old. I started learning HTML recently and this is my first selfmade website.
-    </div>
-    <div class="item6">
-      <b>Contact</b> <br />
-            <i class="fa-solid fa-at"></i> Email:j.gasiorek@gmail.com
-      <br>
-      <i class="fa-brands fa-twitter"></i> Twitter <a target="_blank" href="https://twitter.com/JakubGasiorek2"> @jakub.gasiorek2</a></br>
-      <i class="fa-brands fa-github"></i> GitHub: <a target="_blank" href="https://github.com/JakobyDEV"> @JakobyDEV</a> </br>
+
+    <div class="footer">
+      <h5>
+        Source: https://www.avfolgefonn.de/en/home; https://www.shutterstock.com/de/search/kitten; https://unsplash.com/images/animals/kitten; wikipedia.com
+      </h5>
     </div>
   </body>
 </html>
